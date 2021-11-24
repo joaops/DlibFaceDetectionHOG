@@ -1,0 +1,57 @@
+{
+    "configurations": [
+        {
+            "name": "Windows x64",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "${workspaceFolder}/dep/dlib/include/**",
+                "${workspaceFolder}/dep/dlib/lib/**"
+            ],
+            "defines": [
+                "_DEBUG",
+                "UNICODE",
+                "_UNICODE",
+                "DLIB_PNG_SUPPORT",
+                "DLIB_JPEG_SUPPORT"
+            ],
+            "windowsSdkVersion": "10.0.19041.0",
+            "compilerPath": "C:/msys64/mingw64/bin/g++.exe",
+            "cStandard": "c17",
+            "cppStandard": "c++17",
+            "intelliSenseMode": "windows-gcc-x64"
+        },
+        {
+            "name": "Linux x64",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "${workspaceFolder}/dep/dlib/include/**",
+                "${workspaceFolder}/dep/dlib/lib/**"
+            ],
+            "defines": [
+                "DLIB_PNG_SUPPORT",
+                "DLIB_JPEG_SUPPORT"
+            ],
+            "compilerPath": "/usr/bin/gcc",
+            "cStandard": "c17",
+            "cppStandard": "c++17",
+            "intelliSenseMode": "linux-gcc-x64"
+        },
+        {
+            "name": "Raspberry Pi arm64",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "${workspaceFolder}/dep/dlib/include/**",
+                "${workspaceFolder}/dep/dlib/lib/**"
+            ],
+            "defines": [
+                // "DLIB_PNG_SUPPORT",
+                "DLIB_JPEG_SUPPORT"
+            ],
+            "compilerPath": "/usr/bin/gcc",
+            "cStandard": "c11",
+            "cppStandard": "c++14",
+            "intelliSenseMode": "linux-gcc-arm64"
+        }
+    ],
+    "version": 4
+}

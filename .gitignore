@@ -1,0 +1,6 @@
+/build/linux/main
+/build/windows/main.exe
+/build/windows/*.dll
+/dep/dlib/include/dlib
+/dep/dlib/lib/*.a
+/dep/dlib/lib/*.dll

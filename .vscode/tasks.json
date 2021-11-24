@@ -1,0 +1,129 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "cppbuild",
+			"label": "C/C++ g++.exe Windows x64 Release",
+			"command": "C:/msys64/mingw64/bin/g++.exe",
+			"args": [
+				"-std=c++17",
+				"${file}",
+				// "${workspaceFolder}/dep/dlib/include/dlib/all/source.cpp",
+				"-O3",
+				"-I",
+				"${workspaceFolder}/dep/dlib/include",
+				"-I",
+				"${workspaceFolder}/dep/dlib/include/dlib/external/libpng",
+				"-I",
+				"${workspaceFolder}/dep/dlib/include/dlib/external/libjpeg",
+				"-L",
+				"${workspaceFolder}/dep/dlib/lib",
+				"-l",
+				"dlib",
+				"-l",
+				"pthread",
+				"-l",
+				"gdi32",
+				"-l",
+				"comctl32",
+				"-l",
+				"user32",
+				"-l",
+				"winmm",
+				"-l",
+				"ws2_32",
+				"-l",
+				"imm32",
+				"-D",
+				"DLIB_PNG_SUPPORT",
+				"-D",
+				"DLIB_JPEG_SUPPORT",
+				"-o",
+				"${fileDirname}/build/windows/${fileBasenameNoExtension}.exe",
+			],
+			"options": {
+				"cwd": "${fileDirname}"
+			},
+			"problemMatcher": [
+				"$gcc"
+			],
+			"group": "build",
+			"detail": "compilador: C:/msys64/mingw64/bin/g++.exe"
+		},
+		{
+			"type": "cppbuild",
+			"label": "C/C++: g++ Linux x64 Release",
+			"command": "/usr/bin/g++",
+			"args": [
+				"-std=c++17",
+				"${file}",
+				"-O3",
+				"-I",
+				"${workspaceFolder}/dep/dlib/include",
+				"-I",
+				"${workspaceFolder}/dep/dlib/include/dlib/external/libpng",
+				"-I",
+				"${workspaceFolder}/dep/dlib/include/dlib/external/libjpeg",
+				"-L",
+				"${workspaceFolder}/dep/dlib/lib",
+				"-l",
+				"dlib",
+				"-lpthread",
+				"-lX11",
+				"-lnsl",
+				// "-l socket",
+				"-D",
+				"DLIB_PNG_SUPPORT",
+				"-D",
+				"DLIB_JPEG_SUPPORT",
+				"-o",
+				"${fileDirname}/build/linux/${fileBasenameNoExtension}",
+			],
+			"options": {
+				"cwd": "${fileDirname}"
+			},
+			"problemMatcher": [
+				"$gcc"
+			],
+			"group": "build",
+			"detail": "compilador: /usr/bin/g++"
+		},
+		{
+			"type": "cppbuild",
+			"label": "C/C++: g++ Raspberry Pi arm64 Release",
+			"command": "/usr/bin/g++",
+			"args": [
+				"-std=c++14", // c++17 is not supported by the Raspberry Pi
+				"${file}",
+				"-O3",
+				"-I",
+				"${workspaceFolder}/dep/dlib/include",
+				// "-I", // PNG is not working on Raspberry Pi
+				// "${workspaceFolder}/dep/dlib/include/dlib/external/libpng",
+				"-I",
+				"${workspaceFolder}/dep/dlib/include/dlib/external/libjpeg",
+				"-L",
+				"${workspaceFolder}/dep/dlib/lib",
+				"-l",
+				"dlib",
+				"-lpthread",
+				"-lX11",
+				"-lnsl",
+				// "-D",
+				// "DLIB_PNG_SUPPORT",
+				"-D",
+				"DLIB_JPEG_SUPPORT",
+				"-o",
+				"${fileDirname}/build/linux/${fileBasenameNoExtension}",
+			],
+			"options": {
+				"cwd": "${fileDirname}"
+			},
+			"problemMatcher": [
+				"$gcc"
+			],
+			"group": "build",
+			"detail": "compilador: /usr/bin/g++"
+		}
+	]
+}
