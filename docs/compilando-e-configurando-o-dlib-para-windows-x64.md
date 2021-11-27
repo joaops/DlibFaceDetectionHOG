@@ -1,6 +1,6 @@
 ### Compilando e Configurando o Dlib para Windows x64
 
-Acesse o site do [Dlib](http://dlib.net/) e baixe o seu código fonte `dlib-19.22.zip`.
+Acesse o site do [Dlib](http://dlib.net/) e baixe o código fonte `dlib-19.22.zip`.
 
 Acesse o site do [CMake](https://cmake.org/download/) e baixe o Instalador `cmake-3.22.0-windows-x86_64.msi` ou o ZIP `cmake-3.22.0-windows-x86_64.zip`.
 
@@ -11,6 +11,8 @@ Descompacte o ZIP `dlib-19.22.zip` em algum diretório, entre na pasta `dlib-19.
 > Pode ser em qualquer diretório, mais tarde essa pasta será deletada.
 
 Abra o CMake-GUI, e clique no botão `Browse Source...`, então selecione o diretório `dlib-19.22`.
+
+> Você pode encontrar o `CMake-GUI` dentro da pasta `bin` que está dentro do diretório do CMake.
 
 Clique no botão `Browse Build...` e selecione o diretório: `dlib-19.22/build`.
 

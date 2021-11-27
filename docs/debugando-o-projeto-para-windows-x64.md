@@ -10,7 +10,7 @@ Em seguida, escolhar qual configuração de debug você deseja executar.
 
 ![choose-debugging](./images/choose-debugging.png)
 
-Então procione `F5` ou clique no botão para iniciar para iniciar o Debug:
+Então precione `F5` ou clique no botão para iniciar para iniciar o Debug:
 
 ![run-debug-button](./images/run-debug-button.png)
 

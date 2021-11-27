@@ -25,7 +25,7 @@ E prossiga para a configuração do ambiente em que você deseja compilar o proj
 
 ## Configurando o Ambiente Windows x64
 
-Para configurar o ambiente Windows x64, é necessário que você instale e configure o MinGW 64-bit, compile a biblioteca Dlib e copie alguns de seus arquivos para dentro do projeto.
+Foi utilizado o Windows 10 Pro 64-bits, versão 21H1.
 
 ### [Configurando o MinGW 64-bit](docs/configurando-o-mingw-64-bit.md)
 
@@ -34,6 +34,28 @@ Para configurar o ambiente Windows x64, é necessário que você instale e confi
 ### [Compilando e Executando o Projeto para Windows x64](docs/compilando-e-executando-o-projeto-para-windows-x64.md)
 
 ### [Debugando o Projeto para Windows x64](docs/debugando-o-projeto-para-windows-x64.md)
+
+## Configurando o Ambiente Linux x64
+
+Foi utilizado o [Ubuntu 20.04.3 64-bits](https://www.ubuntu.com/) instalado em uma máquina virtual do [VirtualBox](https://www.virtualbox.org/).
+
+### [Instalando o G++](docs/instalando-o-gpp.md)
+
+### [Compilando e Configurando o Dlib para Linux x64](docs/compilando-e-configurando-o-dlib-para-linux-x64.md)
+
+### [Compilando e Executando o Projeto para Linux x64](docs/compilando-e-executando-o-projeto-para-linux-x64.md)
+
+### [Debugando o Projeto para Linux x64](docs/debugando-o-projeto-para-linux-x64.md)
+
+## Configurando o Ambiente Raspberry Pi ARM64
+
+Foi utilizado a versão de 64-bits do [RaspiOS Bulls Eye](https://downloads.raspberrypi.org/raspios_arm64/images/raspios_arm64-2021-11-08/), instalado em um [Raspberry Pi 3 B+](https://www.raspberrypi.com/products/raspberry-pi-3-model-b-plus/).
+
+### [Instalando o G++ no RaspiOS](docs/instalando-o-gpp-no-raspios.md)
+
+### [Compilando e Configurando o Dlib para RaspiOS ARM64](docs/compilando-e-configurando-o-dlib-para-raspios-arm64.md)
+
+### [Compilando e Executando o Projeto para RaspiOS ARM64](docs/compilando-e-executando-o-projeto-para-raspios-arm64.md)
 
 ## Links Úteis
 
